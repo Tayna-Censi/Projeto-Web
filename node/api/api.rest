@@ -1,0 +1,247 @@
+### API Zero 
+
+@URL = https://riograndense.sa.ngrok.io 
+# @URL = http://localhost:3000 
+
+
+### Get All Produtos
+GET {{URL}}/api/produto?pageSize=50&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to produtos
+POST {{URL}}/api/produto/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "productKeys": [
+    {
+      "MARKETPLACEID": 2,
+      "STOREID": 1,
+      "SKU": "78425"
+    },
+    {
+      "MARKETPLACEID": 1,
+      "STOREID": 1,
+      "SKU": "17943"
+    }
+  ]
+}
+
+
+### Get All Cliente
+GET {{URL}}/api/cliente?pageSize=10&pageIndex=2 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Cliente
+POST {{URL}}/api/cliente/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "clienteKeys": [
+    54, 82, 98
+  ]
+}
+
+
+### Get All Pedido
+GET {{URL}}/api/pedido?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Get All Pedido Produto
+GET {{URL}}/api/pedido-produto?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Get All Prazo
+GET {{URL}}/api/prazo?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Prazo
+POST {{URL}}/api/prazo/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "prazoKeys": [
+    {
+      "NROEMPRESA": 1,
+      "CODPRAZO": 30
+    }
+  ]
+}
+
+
+### Get All Prazo Cliente
+GET {{URL}}/api/prazo-cliente?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Prazo Cliente
+POST {{URL}}/api/prazo-cliente/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "prazoClienteKeys": [
+    {
+      "NROEMPRESA": 1,
+      "CODPRAZO": 7,
+      "SEQPESSOA": 22025
+    }
+  ]
+}
+
+### Get All Preco
+GET {{URL}}/api/preco?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Preco
+POST {{URL}}/api/preco/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "precoKeys": [
+    {
+      "NROEMPRESA": 1,
+      "SEQPRODUTO": 224,
+      "SEQPESSOA": 20320
+    }
+  ]
+}
+
+### Get All Segmento
+GET {{URL}}/api/segmento?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Segmento
+POST {{URL}}/api/segmento/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "segmentoKeys": [
+    3, 4
+  ]
+}
+
+### Get All Status Pedido
+GET {{URL}}/api/status-pedido?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Status Pedido
+POST {{URL}}/api/status-pedido/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "statusPedidoKeys": [
+    1, 2, 4
+  ]
+}
+
+### Get All Status Pedido Evolucao
+GET {{URL}}/api/status-pedido-evolucao?pageSize=10&pageIndex=0 HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Status Pedido Evolucao
+POST {{URL}}/api/status-pedido-evolucao/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "statusPedidoEvolucaoKeys": [
+    1, 2, 4
+  ]
+}
+
+### Get Pedido
+GET {{URL}}/api/pedido
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Pedido
+POST {{URL}}/api/pedido/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "pedidoKeys": [
+    2
+  ]
+}
+
+### Insert Pedido 
+POST {{URL}}/api/pedido
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "MARKETPLACEID": 1,
+  "NROSEGMENTO": 1,
+  "CODCLIENTE": 12340,
+  "DATAPEDIDO": "2008-11-11 13:23:44",
+  "VALORPEDIDO": 1234.23,
+  "STATUS": 1,
+  "CODIGOCONDPGTO": 21,
+  "INDLIBERADO": 0,
+  "DATAPEDIDOINTEGRA": "2008-11-11 13:23:44", 
+  "PRODUTOS": [{
+    "CODPRODUTO": 4553,
+    "QTDSOLICITADA": 12,
+    "PRECOUNITARIO": 10,
+    "PRECOTOTAL": 120
+  }]
+}
+
+### Get Pedido Produto
+GET {{URL}}/api/pedido-produto
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+### Set Synced to Pedido Produto
+POST {{URL}}/api/pedido-produto/synced HTTP/1.1
+Authorization: Basic c3JtaWRpYTphc2QxMjNhc2Q=
+Content-Type: application/json
+x-api-key: ea634e7d-3bcf-41ce-9904-8667c0e1c21e
+
+{
+  "pedidoProdutoKeys": [
+    {
+      "CODPRODUTO": "4553",
+      "CODPEDIDO": "1"
+    }
+  ]
+}
